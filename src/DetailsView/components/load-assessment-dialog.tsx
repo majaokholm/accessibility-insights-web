@@ -34,7 +34,7 @@ export const LoadAssessmentDialog = NamedFC<LoadAssessmentDialogProps>('LoadAsse
         .continuePreviousAssessment,
         rightButtonText: "Load Assessment",
         rightButtonOnClick: props.deps.detailsViewActionMessageCreator
-        .startOverAllAssessments, //change to load assessment
+        .loadAssessment,
         dialogFirstText: <>Would you like to continue your current assessment or load the new Assessment?</>,
         dialogNoteText: "If 'Continue previous' is selected, the assessment selected will not be loaded.",
         dialogWarningText: "If 'Load assessment’ is selected, all previous progress will be lost.",
