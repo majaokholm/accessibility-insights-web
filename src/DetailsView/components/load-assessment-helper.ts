@@ -1,5 +1,8 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 // Licensed under the MIT License.
+
+
+// fyi this file will be removed, as everything needs to move over to load-assessment button
 import { AssessmentDataParser } from 'common/assessment-data-parser';
 import { DetailsViewActionMessageCreator } from 'DetailsView/actions/details-view-action-message-creator';
 
@@ -31,3 +34,4 @@ export class LoadAssessmentHelper {
         input.click();
     }
 }
+// this file will be removed, as everything needs to move over to load-assessment button

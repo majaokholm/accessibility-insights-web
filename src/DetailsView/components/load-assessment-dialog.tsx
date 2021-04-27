@@ -19,6 +19,8 @@ export interface LoadAssessmentDialogProps {
     deps: LoadAssessmentDialogDeps;
     prevTab: PersistedTabInfo;
     newTab: Tab;
+    show: boolean;
+    onClose: () => void;
 }
 
 export const LoadAssessmentDialog = NamedFC<LoadAssessmentDialogProps>('LoadAssessment', props => {
@@ -39,6 +41,10 @@ export const LoadAssessmentDialog = NamedFC<LoadAssessmentDialogProps>('LoadAsse
         dialogNoteText: "If 'Continue previous' is selected, the assessment selected will not be loaded.",
         dialogWarningText: "If 'Load assessment’ is selected, all previous progress will be lost.",
     };
+
+    if(!props.show) {
+        return null
+    }
 
     return (
         <ChangeAssessmentDialog {...dialogProps}

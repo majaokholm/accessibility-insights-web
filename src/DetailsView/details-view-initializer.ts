@@ -27,6 +27,7 @@ import { textContent } from 'content/strings/text-content';
 import { AssessmentViewUpdateHandler } from 'DetailsView/components/assessment-view-update-handler';
 import { NavLinkRenderer } from 'DetailsView/components/left-nav/nav-link-renderer';
 import { LoadAssessmentHelper } from 'DetailsView/components/load-assessment-helper';
+import { LoadAssessmentDialog, LoadAssessmentDialogProps } from 'DetailsView/components/load-assessment-dialog';
 import { NoContentAvailableViewDeps } from 'DetailsView/components/no-content-available/no-content-available-view';
 import { AllUrlsPermissionHandler } from 'DetailsView/handlers/allurls-permission-handler';
 import { NoContentAvailableViewRenderer } from 'DetailsView/no-content-available-view-renderer';
@@ -126,6 +127,7 @@ import { AssessmentInstanceTableHandler } from './handlers/assessment-instance-t
 import { DetailsViewToggleClickHandlerFactory } from './handlers/details-view-toggle-click-handler-factory';
 import { MasterCheckBoxConfigProvider } from './handlers/master-checkbox-config-provider';
 import { PreviewFeatureFlagsHandler } from './handlers/preview-feature-flags-handler';
+import { LoadAssessmentButton, LoadAssessmentButtonProps, LoadAssessmentButtonState } from 'DetailsView/components/load-assessment-button';
 
 declare const window: AutoChecker & Window;
 
@@ -398,6 +400,13 @@ if (tabId != null) {
                 document,
             );
 
+            
+            const loadAssessmentButton = new LoadAssessmentButton(
+                LoadAssessmentButtonProps,
+                LoadAssessmentButtonState
+            );
+
+
             const fileNameBuilder = new FileNameBuilder();
 
             const axeResultToIssueFilingDataConverter = new AxeResultToIssueFilingDataConverter(
@@ -424,7 +433,7 @@ if (tabId != null) {
                 detailsViewActionMessageCreator,
                 assessmentsProvider: Assessments,
                 actionInitiators,
-                assessmentDefaultMessageGenerator: assessmentDefaultMessageGenerator,
+                assessmentDePfaultMessageGenerator: assessmentDefaultMessageGenerator,
                 issueDetailsTextGenerator,
                 windowUtils,
                 fileURLProvider,
