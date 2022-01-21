@@ -62,3 +62,4 @@ jobs:
           - script: npm publish
             workingDirectory: '$(System.DefaultWorkingDirectory)/packages/${{ parameters.suffix }}'
             displayName: npm publish
+            env: { NPM_AUTH_TOKEN: $(npmjs-accessibility-insights-team-publish-auth-token) }
