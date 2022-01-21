@@ -56,8 +56,9 @@ jobs:
           - script: yarn build:package:${{ parameters.suffix }}
             displayName: build:package:${{ parameters.suffix }}
 
-          - task: Npm@1
-            inputs:
-                command: 'publish'
-                publishEndpoint: 'npmjs.com (accessibility-insights-team)'
-                workingDir: '$(System.DefaultWorkingDirectory)/packages/${{ parameters.suffix }}'
+          - script: npm config set //registry.npmjs.org/:_authToken "${NPM_AUTH_TOKEN}"
+            displayName: set npm auth token
+
+          - script: npm publish
+            workingDirectory: '$(System.DefaultWorkingDirectory)/packages/${{ parameters.suffix }}'
+            displayName: npm publish
