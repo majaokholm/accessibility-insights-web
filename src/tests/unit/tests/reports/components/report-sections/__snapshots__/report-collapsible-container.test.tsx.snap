@@ -4,10 +4,8 @@ exports[`ReportCollapsibleContainerControl render with buttonAriaLabel set to: s
 <div
   className="collapsible-container collapsed"
 >
-  <div
-    aria-level={5}
-    className="title-container"
-    role="heading"
+  <HeadingElementForLevel
+    headingLevel={5}
   >
     <button
       aria-controls="content-container-some-id"
@@ -19,7 +17,7 @@ exports[`ReportCollapsibleContainerControl render with buttonAriaLabel set to: s
         Some header
       </div>
     </button>
-  </div>
+  </HeadingElementForLevel>
   <div
     aria-hidden="true"
     className="collapsible-content"
@@ -36,10 +34,8 @@ exports[`ReportCollapsibleContainerControl render with buttonAriaLabel set to: u
 <div
   className="collapsible-container collapsed"
 >
-  <div
-    aria-level={5}
-    className="title-container"
-    role="heading"
+  <HeadingElementForLevel
+    headingLevel={5}
   >
     <button
       aria-controls="content-container-some-id"
@@ -50,7 +46,7 @@ exports[`ReportCollapsibleContainerControl render with buttonAriaLabel set to: u
         Some header
       </div>
     </button>
-  </div>
+  </HeadingElementForLevel>
   <div
     aria-hidden="true"
     className="collapsible-content"
@@ -67,10 +63,8 @@ exports[`ReportCollapsibleContainerControl render with containerClassName set to
 <div
   className="collapsible-container a-container collapsed"
 >
-  <div
-    aria-level={5}
-    className="title-container"
-    role="heading"
+  <HeadingElementForLevel
+    headingLevel={5}
   >
     <button
       aria-controls="content-container-some-id"
@@ -81,7 +75,7 @@ exports[`ReportCollapsibleContainerControl render with containerClassName set to
         Some header
       </div>
     </button>
-  </div>
+  </HeadingElementForLevel>
   <div
     aria-hidden="true"
     className="collapsible-content"
@@ -98,10 +92,8 @@ exports[`ReportCollapsibleContainerControl render with containerClassName set to
 <div
   className="collapsible-container collapsed"
 >
-  <div
-    aria-level={5}
-    className="title-container"
-    role="heading"
+  <HeadingElementForLevel
+    headingLevel={5}
   >
     <button
       aria-controls="content-container-some-id"
@@ -112,7 +104,7 @@ exports[`ReportCollapsibleContainerControl render with containerClassName set to
         Some header
       </div>
     </button>
-  </div>
+  </HeadingElementForLevel>
   <div
     aria-hidden="true"
     className="collapsible-content"
@@ -129,10 +121,8 @@ exports[`ReportCollapsibleContainerControl render with contentClassName set to: 
 <div
   className="collapsible-container collapsed"
 >
-  <div
-    aria-level={5}
-    className="title-container"
-    role="heading"
+  <HeadingElementForLevel
+    headingLevel={5}
   >
     <button
       aria-controls="content-container-some-id"
@@ -143,7 +133,7 @@ exports[`ReportCollapsibleContainerControl render with contentClassName set to: 
         Some header
       </div>
     </button>
-  </div>
+  </HeadingElementForLevel>
   <div
     aria-hidden="true"
     className="collapsible-content"
@@ -160,10 +150,8 @@ exports[`ReportCollapsibleContainerControl render with contentClassName set to: 
 <div
   className="collapsible-container collapsed"
 >
-  <div
-    aria-level={5}
-    className="title-container"
-    role="heading"
+  <HeadingElementForLevel
+    headingLevel={5}
   >
     <button
       aria-controls="content-container-some-id"
@@ -174,7 +162,7 @@ exports[`ReportCollapsibleContainerControl render with contentClassName set to: 
         Some header
       </div>
     </button>
-  </div>
+  </HeadingElementForLevel>
   <div
     aria-hidden="true"
     className="collapsible-content"
@@ -191,10 +179,8 @@ exports[`ReportCollapsibleContainerControl render with id set to: some id 1`] = 
 <div
   className="collapsible-container collapsed"
 >
-  <div
-    aria-level={5}
-    className="title-container"
-    role="heading"
+  <HeadingElementForLevel
+    headingLevel={5}
   >
     <button
       aria-controls="content-container-some id"
@@ -205,7 +191,7 @@ exports[`ReportCollapsibleContainerControl render with id set to: some id 1`] = 
         Some header
       </div>
     </button>
-  </div>
+  </HeadingElementForLevel>
   <div
     aria-hidden="true"
     className="collapsible-content"
@@ -222,10 +208,8 @@ exports[`ReportCollapsibleContainerControl render with id set to: undefined 1`] 
 <div
   className="collapsible-container collapsed"
 >
-  <div
-    aria-level={5}
-    className="title-container"
-    role="heading"
+  <HeadingElementForLevel
+    headingLevel={5}
   >
     <button
       aria-controls="content-container-undefined"
@@ -236,7 +220,7 @@ exports[`ReportCollapsibleContainerControl render with id set to: undefined 1`] 
         Some header
       </div>
     </button>
-  </div>
+  </HeadingElementForLevel>
   <div
     aria-hidden="true"
     className="collapsible-content"
